@@ -1,4 +1,5 @@
 /* See LICENSE file for copyright and license details. */
+#include <X11/XF86keysym.h>
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -69,6 +70,7 @@ static Key keys[] = {
   { MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("pcmanfm") },
  	{ MODKEY,			                  XK_r,		   spawn,		       SHCMD("st -e nnn") },
  	{ MODKEY,			                  XK_e,		   spawn,		       SHCMD("st -e lvim") },
+ 	{ MODKEY,			                  XK_n,		   spawn,		       SHCMD("st -e nmtui") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -107,6 +109,9 @@ static Key keys[] = {
  	{ MODKEY|ShiftMask,             XK_q,		   spawn,		       SHCMD("power") },
  	{ 0,				                    XK_Print,	 spawn,		       SHCMD("snappy") },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {0} },
+  { 0,         XF86XK_AudioLowerVolume,      spawn,          SHCMD("sound -d") },
+	{ 0,                XF86XK_AudioMute,      spawn,          SHCMD("sound -m") },
+	{ 0,         XF86XK_AudioRaiseVolume,      spawn,          SHCMD("sound -i") },
 };
 
 /* button definitions */
