@@ -112,6 +112,8 @@ static Key keys[] = {
   { 0,         XF86XK_AudioLowerVolume,      spawn,          SHCMD("sound -d") },
 	{ 0,                XF86XK_AudioMute,      spawn,          SHCMD("sound -m") },
 	{ 0,         XF86XK_AudioRaiseVolume,      spawn,          SHCMD("sound -i") },
+  { 0,        XF86XK_MonBrightnessDown,      spawn,          SHCMD("brightness -d") },
+  { 0,          XF86XK_MonBrightnessUp,      spawn,          SHCMD("brightness -i") },
 };
 
 /* button definitions */
