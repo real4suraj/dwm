@@ -71,6 +71,7 @@ static Key keys[] = {
  	{ MODKEY,			                  XK_r,		   spawn,		       SHCMD("st -e nnn") },
  	{ MODKEY,			                  XK_e,		   spawn,		       SHCMD("st -e lvim") },
  	{ MODKEY,			                  XK_n,		   spawn,		       SHCMD("st -e nmtui") },
+ 	{ MODKEY|ShiftMask,             XK_m,		   spawn,		       SHCMD("st -e cmus") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -107,7 +108,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
  	{ MODKEY|ShiftMask,             XK_q,		   spawn,		       SHCMD("power") },
- 	{ 0,				                    XK_Print,	 spawn,		       SHCMD("snappy") },
+ 	{ 0,				                    XK_Print,	 spawn,		       SHCMD("snappy_screenutility") },
+ 	{ 0,				                    XK_F1,	   spawn,		       SHCMD("quick_search") },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {0} },
   { 0,         XF86XK_AudioLowerVolume,      spawn,          SHCMD("sound -d") },
 	{ 0,                XF86XK_AudioMute,      spawn,          SHCMD("sound -m") },
