@@ -69,7 +69,7 @@ static Key keys[] = {
   { MODKEY,                       XK_w,      spawn,          SHCMD("$BROWSER") },
   { MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("pcmanfm") },
  	{ MODKEY,			                  XK_r,		   spawn,		       SHCMD("st -e nnn") },
- 	{ MODKEY,			                  XK_e,		   spawn,		       SHCMD("st -e lvim") },
+ 	{ MODKEY,			                  XK_e,		   spawn,		       SHCMD("st -e nvim") },
  	{ MODKEY,			                  XK_n,		   spawn,		       SHCMD("st -e nmtui") },
  	{ MODKEY|ShiftMask,             XK_m,		   spawn,		       SHCMD("st -e cmus") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
